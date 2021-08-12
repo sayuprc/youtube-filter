@@ -1,0 +1,18 @@
+body {
+  width: 200px;
+  height: 210px;
+}
+
+textarea {
+  display: block;
+  margin: auto;
+  width: 175px;
+  height: 175px;
+  resize: none;
+}
+
+button {
+  display: block;
+  margin: 5px 10px 0 auto;
+  padding: 2px 10px;
+}

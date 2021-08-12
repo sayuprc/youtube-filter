@@ -1,0 +1,18 @@
+{
+  "name": "youtube-filter-chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sayu",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "npx tsc -w",
+    "cp": "cp manifest.json ./dist/ && cp ./src/popup/popup.html ./dist/popup/ && cp ./src/popup/popup.css ./dist/popup/",
+    "build": "npx tsc && yarn cp"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.152",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
