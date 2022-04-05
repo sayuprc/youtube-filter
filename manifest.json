@@ -1,7 +1,7 @@
 {
   "name": "Youtube filter",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "指定文字列を含む動画を一覧から削除",
   "permissions": [
     "storage",
@@ -16,12 +16,9 @@
     ]
   }],
   "background": {
-    "scripts": [
-      "./event/event.js"
-    ],
-    "persistent": false
+    "service_worker": "./event/event.js"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "./popup/popup.html"
   }
 }
